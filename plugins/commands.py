@@ -323,10 +323,10 @@ async def start(client, message):
                         f_caption=BATCH_FILE_CAPTION.format(file_name=getattr(media, 'file_name', ''), file_size=getattr(media, 'file_size', ''), file_caption=getattr(msg, 'caption', ''))
                     except Exception as e:
                         logger.exception(e)
-                        f_caption = getattr(msg, 'caption', '')
+                        f_caption = getattr(msg, 'caption', '@super4crazy')
                 else:
                     media = getattr(msg, msg.media.value)
-                    file_name = getattr(media, 'file_name', '')
+                    file_name = getattr(media, 'file_name', '@super4crazy')
                     f_caption = getattr(msg, 'caption', file_name)
                 try:
                     await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
