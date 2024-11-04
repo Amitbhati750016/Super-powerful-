@@ -42,7 +42,7 @@ reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001837694049') # request chan
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sonudhakad:CMOy8Vc3CsjcUMSN@cluster0.5zpl3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sonudhakad1:z5ZggnaAzHn7dhsp@cluster0.5zpl3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
